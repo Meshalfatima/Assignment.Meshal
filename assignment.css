@@ -1,0 +1,210 @@
+/* Blue top bar */
+.top-blue-bar {
+  background-color: #007dc5;
+  font-size: 14px;
+}
+
+/* Diagonal section */
+.top-diagonal {
+  height: 40px;
+}
+
+.grey-left {
+  flex: 1;
+  background: #c4c4c4;
+}
+
+.white-right {
+  flex: 2;
+  background: white;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+}
+
+/* Logo + icons section */
+.top-content {
+  background: white;
+  position: relative;
+  z-index: 2;
+}
+
+/* White triangle below logo area */
+.white-point {
+  width: 100%;
+  height: 30px;
+  background: white;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  margin-top: -10px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Navbar styles */
+.nav-menu {
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.nav-menu .nav-link {
+  color: #333;
+  font-weight: 500;
+  padding: 6px 15px;
+  transition: 0.2s ease;
+}
+
+.nav-menu .nav-link:hover {
+  color: #007dc5;
+}
+/* Background banner section */
+.job-search-banner {
+  background: url('https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/2uQRrnlUBwOoqlNbcQSpYr/a4fbb0dbc1a6b5ba696410ff091039a8/GettyImages-2170485830.jpg?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000') no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+}
+
+.job-search-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  backdrop-filter: blur(3px);
+  z-index: 0;
+}
+
+.search-box {
+  background: white;
+  padding: 20px 25px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  position: relative;
+  z-index: 1;
+  width: 80%;
+  max-width: 700px;
+}
+
+.search-box input::placeholder {
+  font-size: 14px;
+}
+
+/* Watch how it works */
+.watch-section {
+  margin-top: -20px;
+  position: relative;
+  z-index: 2;
+}
+.file-icon-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #e6f7fb; /* Light blue background like your screenshot */
+  color: #00bcd4;             /* Icon color */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-right: 15px;         /* Space between icon and job text */
+}
+/* Tabs style */
+.tab-buttons {
+  gap: 15px;
+}
+
+.tab-btn {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 10px 25px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  transition: 0.3s;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.tab-btn.active {
+  background-color: white;
+  border-bottom: 2px solid white;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  color: #00bcd4;
+}
+
+/* Job item */
+.job-item a {
+  text-decoration: none;
+}
+
+.job-item img {
+  border-radius: 50%;
+  background-color: #e6f7fb;
+  padding: 6px;
+}
+.job-category-box {
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  height: 60px;
+}
+
+.arrow-box {
+  background-color: #00bcd4;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+.stat-box {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.stat-box:hover {
+  background-color: #e0f7fa;
+}
+.footer {
+  background-color: #222;
+}
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  color: #00bfff;
+}
+.icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+
+.icon-circle:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.footer-bottom {
+  background-color: #1a1a1a;
+}
+
+.social-icon {
+  color: #fff;
+  margin: 0 8px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #00bfff;
+}
